@@ -2,18 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, Calendar, User } from "lucide-react";
-import { blogs } from "@/utils/data/blogs";
-
-interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  author: string;
-  category: string;
-  imageUrl: string;
-  slug: string;
-}
+import { BlogPost, blogs } from "@/utils/data/blogs";
 
 export default function BlogPage() {
   const [category, setCategory] = useState<string | null>(null);

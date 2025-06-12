@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ShieldCheck, HeartPulse, ListCheck, User, UserCheck, Clock } from "lucide-react";
-import { motion } from "framer-motion"; 
+
 const features = [
   {
     name: "AI-Powered Prediction",
