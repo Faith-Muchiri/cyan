@@ -1,13 +1,7 @@
-import { useRouter } from 'next/router';
-import { blogs } from '@/utils/data/blogs';
-import { BlogPost } from '@/utils/data/blogs';
+import { blogs, BlogPost } from '@/utils/data/blogs';
+import { useRouter } from 'next/navigation';
 
 export default function BlogItem({ blog }: { blog: BlogPost | null }) {
-  const router = useRouter();
-
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
 
   if (!blog) {
     return <div className="p-8 text-red-600">Blog not found.</div>;
@@ -21,15 +15,15 @@ export default function BlogItem({ blog }: { blog: BlogPost | null }) {
   );
 }
 
-
 export async function getStaticPaths() {
-  const paths = blogs.map((blog) => ({
-    params: { id: blog.id }
+  const paths = blogs.map(post => ({
+    params: { slug: post.slug },
   }));
-
-  return { paths, fallback: true };
+  return {
+    paths,
+    fallback: false,
+  };
 }
-
 
 export async function getStaticProps({ params }: { params: { id: string } }) {
   const blog = blogs.find((b) => b.id === params.id) || null;
