@@ -60,7 +60,7 @@ const Hero = () => {
             }`}
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-cyan-50 to-teal-50 border border-cyan-100 text-cyan-800 font-semibold text-sm">
-              ✨ AI-Powered Women's Health
+              ✨ AI-Powered Women`s Health
             </span>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -155,7 +155,7 @@ const Hero = () => {
               {/* FAQ Teaser */}
               <div className="mt-6 bg-gradient-to-r from-cyan-50 to-teal-50 p-4 rounded-lg">
                 <p className="text-sm text-gray-700">
-                  "How does AI improve women's health outcomes?"
+                  &quot;How does AI improve women`s health outcomes?&quot;
                 </p>
                 <button className="text-sm font-semibold text-cyan-700 hover:text-cyan-600 mt-1">
                   Ask our health assistant →

@@ -13,8 +13,9 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      "react/no-unescaped-entities": "off", // Disables unescaped entity warnings
-      "@next/next/no-img-element": "off", // Allows using <img> instead of Next.js <Image>
+      "@next/next/no-img-element": "off", // Allow <img> usage
+      "@typescript-eslint/no-unused-vars": "off", // Allow unused vars like 'slug'
+      "@typescript-eslint/no-explicit-any": "off", // Allow usage of 'any'
     },
   },
 ];

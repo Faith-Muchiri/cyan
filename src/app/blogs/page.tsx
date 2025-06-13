@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, Calendar, User } from "lucide-react";
-import { BlogPost, blogs } from "@/utils/data/blogs";
+import { BlogPost, blogs } from "../../../content/blogs";
 
 export default function BlogPage() {
   const [category, setCategory] = useState<string | null>(null);
@@ -87,7 +87,7 @@ export default function BlogPage() {
                       <span>{featuredPost.author}</span>
                     </div>
                   </div>
-                  <Link href={`/blog/${featuredPost.slug}`}>
+                  <Link href={`/blogs/${featuredPost.slug}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 mt-4 text-white bg-gradient-to-r from-cyan-600 to-teal-600 rounded-md hover:opacity-90 transition">
                       <span>Read Full Article</span>
                       <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -128,7 +128,7 @@ export default function BlogPage() {
                           <span>{post.author}</span>
                         </div>
                       </div>
-                      <Link href={`/blog/${post.slug}`}>
+                      <Link href={`/blogs/${post.slug}`}>
                         <span className="inline-flex items-center gap-1 text-cyan-600 hover:underline text-sm mt-2">
                           Read more <ArrowRight className="h-4 w-4" />
                         </span>
