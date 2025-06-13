@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Shield, Heart, Users, ShieldCheck } from "lucide-react";
-import { teamMembers } from "@/utils/data/team";
+import { teamMembers } from "../../../content/team";
 
 export default function About() {
   return (
@@ -15,11 +15,11 @@ export default function About() {
                   Our Mission
                 </span>
                 <h1 className="font-bold tracking-tight text-4xl lg:text-5xl">
-                  <span className="block text-gray-900">Transforming Women's</span>
+                  <span className="block text-gray-900">Transforming Women`s</span>
                   <span className="block text-cyan-600">Healthcare with AI</span>
                 </h1>
                 <p className="text-lg text-gray-600">
-                  At Cyan Health, we're dedicated to revolutionizing women's healthcare through intelligent technology.
+                  At Cyan Health, we`re dedicated to revolutionizing women`s healthcare through intelligent technology.
                   Our mission is to make quality healthcare more accessible, personalized, and effective for women everywhere.
                 </p>
               </div>
@@ -69,7 +69,7 @@ export default function About() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { title: "Patient-Centered Care", icon: <Heart />, desc: "We put women's unique healthcare needs at the center of everything we do." },
+                { title: "Patient-Centered Care", icon: <Heart />, desc: "We put women`s unique healthcare needs at the center of everything we do." },
                 { title: "Privacy & Security", icon: <Shield />, desc: "We maintain the highest standards for protecting sensitive health data." },
                 { title: "Clinical Excellence", icon: <ShieldCheck />, desc: "Built on rigorous medical research and evidence-based practices." },
                 { title: "Accessibility", icon: <Users />, desc: "Making healthcare available to women from all walks of life." }
@@ -92,7 +92,7 @@ export default function About() {
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
               <p className="text-lg text-gray-600">
-                Meet the experts behind Cyan Health's mission to transform women's healthcare.
+                Meet the experts behind Cyan Health`s mission to transform women`s healthcare.
               </p>
             </div>
 
@@ -116,7 +116,7 @@ export default function About() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Healthcare Experience?</h2>
-              <p className="text-lg mb-8">Join us today and be part of the future of women's healthcare.</p>
+              <p className="text-lg mb-8">Join us today and be part of the future of women`s healthcare.</p>
               <Link
                 href="/signup"
                 className="inline-block px-6 py-3 bg-white text-cyan-700 font-semibold rounded-lg shadow hover:bg-gray-100 transition duration-300"
